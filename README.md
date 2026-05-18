@@ -1,8 +1,8 @@
-# Titanic ML Project — 
+# Titanic ML Project
 
 ---
 
-# Project Overview
+## Project Overview
 
 This project is a complete end-to-end machine learning pipeline that predicts Titanic survival outcomes.
 
@@ -15,7 +15,7 @@ It includes:
 
 ---
 
-# Goal
+## Goal
 
 Build a production-style ML pipeline:
 
@@ -23,7 +23,7 @@ Data → Preprocessing → Feature Engineering → Model Training → Evaluation
 
 ---
 
-# Problem Type
+## Problem Type
 
 Binary Classification
 
@@ -31,7 +31,7 @@ Target: Survived (0 = No, 1 = Yes)
 
 ---
 
-# Models
+## Models
 
 - Logistic Regression
 - LDA
@@ -43,7 +43,7 @@ Target: Survived (0 = No, 1 = Yes)
 
 ---
 
-# Pipeline
+## Pipeline
 
 Data Loading
 → Missing Value Handling
@@ -55,17 +55,17 @@ Data Loading
 
 ---
 
-# Key Results
+## Key Results
 
 Best Model: Random Forest / SVM (depending on run)
 
-## ROC Curve
+### ROC Curve
 ![ROC](assets/ROC_Curve_Comparison.png)
 
-## Confusion Matrix
+### Confusion Matrix
 ![CM](assets/Confusion_Matrix_Random_Forest.png)
 
-## Feature Importance
+### Feature Importance
 ![FI](assets/Feature_Importance_Random_Forest.png)
 
 ---
@@ -76,7 +76,7 @@ Best Model: Random Forest / SVM (depending on run)
 
 ---
 
-# Feature Importance
+## Feature Importance
 
 Top features:
 - Sex
@@ -86,7 +86,7 @@ Top features:
 
 ---
 
-# Streamlit App
+## Streamlit App
 
 Run locally:
 ```bash
@@ -100,7 +100,7 @@ Features:
 
 ---
 
-# How to Run
+## How to Run
 
 ```bash
 pip install -r requirements.txt
@@ -111,13 +111,13 @@ streamlit run app.py
 
 ---
 
-# Tech Stack
+## Tech Stack
 
 Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Streamlit
 
 ---
 
-# Key Learnings
+## Key Learnings
 
 - End-to-end ML pipeline design
 - Feature engineering impact
@@ -127,13 +127,13 @@ Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Streamlit
 
 ---
 
-# Author
+## Author
 
 HubertKuo
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 - Hyperparameter tuning
 - Cross-validation
