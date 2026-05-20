@@ -1,37 +1,31 @@
 # Titanic ML Project
 
+> End-to-end machine learning pipeline for predicting passenger survival on the Titanic dataset.
+
 ---
 
-## Project Overview
+## 🚀 Overview
 
-This project is a complete end-to-end machine learning pipeline that predicts Titanic survival outcomes.
+This project implements a complete ML workflow:
 
-It includes:
 - Data preprocessing
 - Feature engineering
-- Multiple ML models
-- Model evaluation
-- Web deployment (Streamlit)
+- Model training & comparison
+- Evaluation
+- Streamlit deployment
+
+Goal: build a **production-style ML pipeline**, not just a training script.
 
 ---
 
-## Goal
+## 🎯 Problem Type
 
-Build a production-style ML pipeline:
-
-Data → Preprocessing → Feature Engineering → Model Training → Evaluation → Deployment
-
----
-
-## Problem Type
-
-Binary Classification
-
-Target: Survived (0 = No, 1 = Yes)
+Binary Classification  
+Target: `Survived (0 = No, 1 = Yes)`
 
 ---
 
-## Models
+## 🧠 ML Models
 
 - Logistic Regression
 - LDA
@@ -43,42 +37,46 @@ Target: Survived (0 = No, 1 = Yes)
 
 ---
 
-## Pipeline
+## ⚙️ Pipeline Design
 
+```
 Data Loading
-→ Missing Value Handling
-→ Feature Engineering
-→ Train/Test Split
-→ Model Training
-→ Evaluation
-→ Prediction
+   ↓
+Missing Value Handling
+   ↓
+Feature Engineering
+   ↓
+Train/Test Split
+   ↓
+Model Training
+   ↓
+Evaluation
+   ↓
+Prediction
+```
+
+Key idea: **structured ML pipeline from raw data to deployment**
 
 ---
 
-## Key Results
+## 📊 Key Results
 
-Best Model: Random Forest / SVM (depending on run)
+Best Model: Random Forest / SVM
 
 ### ROC Curve
-![ROC](assets/ROC_Curve_Comparison.png)
+![roc](assets/ROC_Curve_Comparison.png)
 
 ### Confusion Matrix
-![CM](assets/Confusion_Matrix_Random_Forest.png)
+![cm](assets/Confusion_Matrix_Random_Forest.png)
 
 ### Feature Importance
-![FI](assets/Feature_Importance_Random_Forest.png)
+![fi](assets/Feature_Importance_Random_Forest.png)
 
 ---
 
-## Demo
-![Streamlit](assets/streamlit_demo.png)
+## 🎯 Feature Importance
 
-
----
-
-## Feature Importance
-
-Top features:
+Most important features:
 - Sex
 - Pclass
 - Fare
@@ -86,54 +84,66 @@ Top features:
 
 ---
 
-## Streamlit App
+## 🖥 Streamlit App
 
-Run locally:
+### Demo
+![demo](assets/streamlit_demo.png)
+
+### Run locally
 ```bash
 streamlit run app.py
 ```
 
-Features:
-- User input form
+### Features
+- Interactive input form
 - Real-time prediction
-- Survival probability
+- Survival probability output
 
 ---
 
-## How to Run
+## ▶️ How to Run
 
 ```bash
 pip install -r requirements.txt
+
+# Train model
 python src/train.py
+
+# Run inference
 python src/predict.py
+
+# Launch UI
 streamlit run app.py
 ```
 
 ---
 
-## Tech Stack
+## 🧰 Tech Stack
 
-Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Streamlit
+Python, Pandas, NumPy, Scikit-learn, Matplotlib, Streamlit
 
 ---
 
-## Key Learnings
+## 🧩 Key Concepts
 
 - End-to-end ML pipeline design
 - Feature engineering impact
-- Model comparison
-- Overfitting control
-- Basic deployment
+- Model comparison strategy
+- Overfitting awareness
+- Basic model deployment
 
 ---
 
-## Author
+## 🔮 Future Work
 
-HubertKuo
-
----
-
-## Future Improvements
-
-- Hyperparameter tuning
+- Hyperparameter tuning (GridSearchCV)
 - Cross-validation
+- Feature selection optimization
+- Model stacking
+
+---
+
+## 👤 Author
+
+Built by: Hubert Kuo  
+Focus: Computer Vision / AI Systems / Machine Learning
